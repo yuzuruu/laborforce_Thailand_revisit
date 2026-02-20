@@ -53,7 +53,9 @@ copy_one <-
       },
     otherwise = FALSE
     )
-# copy
+# copy the files
+# NOTE
+# This process consumes approx. 10 minutes.
 res <-
   # pass paths of target files
   tibble::tibble(path = files) %>%
